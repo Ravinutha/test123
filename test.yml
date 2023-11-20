@@ -1,2 +1,8 @@
 ---
 - name: my playbook
+  hosts: linux
+  gather_facts: no
+
+  tasks:
+    - debug:
+       var: inventory_hostname
